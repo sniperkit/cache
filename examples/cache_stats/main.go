@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 	"strconv"
+	"time"
 
 	// github api
 	"github.com/google/go-github/github"
@@ -27,7 +28,7 @@ import (
 )
 
 var (
-	influxConfig *influxdb.ClientConfig
+	influxConfig influxdb.ClientConfig
 	influxClient *influxdb.Client
 )
 

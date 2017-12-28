@@ -1,4 +1,4 @@
-package cacher
+package cache
 
 // A Cache interface is used by the Transport to store and retrieve responses.
 type Cache interface {

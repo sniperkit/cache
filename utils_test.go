@@ -1,4 +1,4 @@
-package cacher_test
+package cache
 
 import (
 	"bytes"
