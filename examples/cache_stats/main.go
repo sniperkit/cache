@@ -50,7 +50,7 @@ func main() {
 	stats.Register(influxClient)
 	defer stats.Flush()
 
-	cacheStoragePrefixPath := filepath.Join("shared", "cacher.badger")
+	cacheStoragePrefixPath := filepath.Join("shared", "cache", "badger")
 	helpers.EnsureDir(cacheStoragePrefixPath)
 	hcache, err := cachebadger.New(
 		&cachebadger.Config{
