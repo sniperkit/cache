@@ -1,0 +1,16 @@
+services:
+
+  influxdb:
+    image: influxdb:alpine
+    ports:
+      - 8086:8086
+
+  chronograph:
+    image: chronograph:alpine
+    ports:
+      - 8888:8888
+
+  kapacitor:
+    image: kapacitor:alpine
+    ports:
+      - 9092:9092
