@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sniperkit/cacher"
+	"github.com/sniperkit/cache"
 )
 
 func newRequest(method, url string, h ...string) *http.Request {

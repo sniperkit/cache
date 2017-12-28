@@ -40,7 +40,7 @@ import (
 	"sync"
 
 	"github.com/roscopecoltran/plugins/forward/consistenthash"
-	"github.com/sniperkit/cacher"
+	"github.com/sniperkit/cache"
 )
 
 const (

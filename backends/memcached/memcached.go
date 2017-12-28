@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/bradfitz/gomemcache/memcache"
-	// "github.com/sniperkit/cacher/helpers"
+	// "github.com/sniperkit/cache/helpers"
 )
 
 // Cache objects store and retrieve data using Memcached.

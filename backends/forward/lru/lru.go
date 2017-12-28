@@ -21,7 +21,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/sniperkit/cacher"
+	"github.com/sniperkit/cache"
 )
 
 // Cache is an LRU cache. It is safe for concurrent access.

@@ -3,7 +3,7 @@ package badgerrediscache
 import (
 	"github.com/jinzhu/configor"
 	"github.com/k0kubun/pp"
-	"github.com/sniperkit/cacher/core"
+	"github.com/sniperkit/cache/core"
 	"github.com/sniperkit/configer"
 	"github.com/sniperkit/vipertags"
 )

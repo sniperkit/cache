@@ -14,7 +14,7 @@ import (
 
 	bolt "github.com/coreos/bbolt"
 	log "github.com/sirupsen/logrus"
-	// "github.com/sniperkit/cacher/helpers"
+	// "github.com/sniperkit/cache/helpers"
 )
 
 /*

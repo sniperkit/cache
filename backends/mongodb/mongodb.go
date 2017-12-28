@@ -6,7 +6,7 @@ import (
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
-	// "github.com/sniperkit/cacher/helpers/bson"
+	// "github.com/sniperkit/cache/helpers/bson"
 )
 
 // Cache objects store and retrieve data using Mongo.

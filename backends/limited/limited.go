@@ -18,7 +18,7 @@ import (
 
 	"github.com/bluele/gcache"
 	"github.com/peterbourgon/diskv"
-	// "github.com/sniperkit/cacher/helpers"
+	// "github.com/sniperkit/cache/helpers"
 )
 
 const maxEventChanLen = 1024

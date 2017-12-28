@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 	// log "github.com/sirupsen/logrus"
-	// "github.com/sniperkit/cacher/helpers"
+	// "github.com/sniperkit/cache/helpers"
 )
 
 type IndexEntry struct {

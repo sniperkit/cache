@@ -27,7 +27,7 @@ import (
 	"strconv"
 
 	"github.com/Azure/azure-sdk-for-go/storage"
-	// "github.com/sniperkit/cacher/helpers"
+	// "github.com/sniperkit/cache/helpers"
 )
 
 // Cache stores and retrieves data using Azure Storage.

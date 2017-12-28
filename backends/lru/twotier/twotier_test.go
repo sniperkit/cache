@@ -2,7 +2,7 @@ package twotier
 
 import (
 	"github.com/die-net/lrucache"
-	"github.com/sniperkit/cacher"
+	"github.com/sniperkit/cache"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
