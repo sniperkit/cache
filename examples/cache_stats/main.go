@@ -38,13 +38,13 @@ func main() {
 
 	// initialize new influxdb client
 	influxConfig = influxdb.ClientConfig{
-		Database:   "stats2",
+		Database:   "httpcache_stats",
 		Address:    "127.0.0.1:8086",
 		BufferSize: 2 * 1024 * 1024,
 		Timeout:    5 * time.Second,
 	}
 	influxClient = influxdb.NewClientWith(influxConfig)
-	influxClient.CreateDB("stats")
+	influxClient.CreateDB("httpcache_stats")
 
 	// register engine
 	stats.Register(influxClient)
@@ -54,7 +54,7 @@ func main() {
 	helpers.EnsureDir(cacheStoragePrefixPath)
 	hcache, err := cachebadger.New(
 		&cachebadger.Config{
-			ValueDir:    "api.github.com.v3.gzip", //gzip",
+			ValueDir:    "api.github.com.v3.snappy",
 			StoragePath: cacheStoragePrefixPath,
 			SyncWrites:  true,
 			Debug:       false,
@@ -111,7 +111,7 @@ func main() {
 
 	for opts.Page <= maxPage {
 		stars, response, e := gh.Activity.ListStargazers(ctx, u, r, &opts)
-		log.Println("response.Header.Get(cacher.XFromCache)? ", response.Header.Get(cacher.XFromCache))
+		log.Println("response.Header.Get(cache.XFromCache)? ", response.Header.Get(cache.XFromCache))
 		if e != nil {
 			log.Fatal(e)
 			os.Exit(1)

@@ -1,0 +1,3 @@
+influxdb: influxd -config /usr/local/etc/influxdb.conf
+chronograph: chronograf
+cache_stats: ./cache_stats segmentio stats
